@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/74253e1947.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   </head>
+<body>
+        
+    
+    
+    <div class="header">
+        <nav>
+            <div class="logo">
+                <img src="image/HOTEL__3_-removebg-preview.png" alt="">
+            </div>
+            <a class="menu-btn" href="#">
+                <span class="menu-icon">&#9776;</span>
+            
+            </a>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="room.html">Room</a></li>
+                <li class="book" style="float: right; background-color: #ffffff; margin-right: 10px; padding: auto; border-radius: 5px;"><a href="sign.html">SIGN UP!</a></li>
+            </ul>
+        </nav>
+    </div>
+
+      <div class="banner_main">
+         <div class="content">
+            <hr>
+            <p class="paragraph">
+               WHERE GENERATIONS MEET
+            </p>
+            <hr>
+         </div>
+      </div>
+
+      <div class="content-2">
+         <form action="book.php" method="POST" class="form-book">
+            <div class="col">
+               <label for="ariv" class="lab">ARIVAL:</label>
+               <input type="date" name="date" id="arival">
+            </div>
+            <div class="col">
+               <label for="dpart"  class="lab">DEPARTURE:</label>
+               <input type="date" name="date" id="dpart">
+            </div>
+            <div class="col">
+               <input type="button" value="SEARCH" class="sub">
+            </div>
+         </form>
+      </div>
+
+      <div class="container-xxl py-5">
+         <div class="container">
+             <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                 <h6 class="section-title">Our Rooms</h6>
+                 <h1 class="mb-5">Explore Our <span class="lux">Rooms</span></h1>
+             </div>
+             <div class="row g-4">
+                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                     <div class="room-item shadow rounded overflow-hidden">
+                         <div class="position-relative">
+                             <img class="img-fluid" src="image/task2-two.jpg" alt="">
+                             <small class="night">$100/Night</small>
+                         </div>
+                         <div class="p-4 mt-2">
+                             <div class="d-flex justify-content-between mb-3">
+                                 <h5 class="mb-0">Junior Suite</h5>
+                                 <div class="ps-2">
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                 </div>
+                             </div>
+                             <div class="d-flex mb-3">
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary1 me-2"></i>2 Bed</small>
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary1 me-2"></i>1 Bath</small>
+                                 <small><i class="fa fa-wifi text-primary1 me-2"></i>Wifi</small>
+                             </div>
+                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                             <div class="d-flex justify-content-between">
+                                 <!-- <a class="room-btn1" href="">View Detail</a> -->
+                                 <a class="room-btn1" href="room-1-info.html">Select</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                     <div class="room-item shadow rounded overflow-hidden">
+                         <div class="position-relative">
+                             <img class="img-fluid" src="image/room1.jpg" alt="">
+                             <small class="night">$200/Night</small>
+                         </div>
+                         <div class="p-4 mt-2">
+                             <div class="d-flex justify-content-between mb-3">
+                                 <h5 class="mb-0">Executive Suite</h5>
+                                 <div class="ps-2">
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                 </div>
+                             </div>
+                             <div class="d-flex mb-3">
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary1 me-2"></i>3 Bed</small>
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary1 me-2"></i>2 Bath</small>
+                                 <small><i class="fa fa-wifi text-primary1 me-2"></i>Wifi</small>
+                             </div>
+                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                             <div class="d-flex justify-content-between">
+                                 <!-- <a class="room-btn1 btn-sm btn-primary1 rounded py-2 px-4" href="">View Detail</a> -->
+                                 <a class="room-btn1" href="room-2-info.html">Select</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                     <div class="room-item shadow rounded overflow-hidden">
+                         <div class="position-relative">
+                             <img class="img-fluid" src="image/room2.jpg" alt="">
+                             <small class="night">$300/Night</small>
+                         </div>
+                         <div class="p-4 mt-2">
+                             <div class="d-flex justify-content-between mb-3">
+                                 <h5 class="mb-0">Super Deluxe</h5>
+                                 <div class="ps-2">
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                     <small class="fa fa-star reviews"></small>
+                                 </div>
+                             </div>
+                             <div class="d-flex mb-3">
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bed text-primary1 me-2"></i>5 Bed</small>
+                                 <small class="border-end me-3 pe-3"><i class="fa fa-bath text-primary1 me-2"></i>3 Bath</small>
+                                 <small><i class="fa fa-wifi text-primary1 me-2"></i>Wifi</small>
+                             </div>
+                             <p class="text-body mb-3">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                             <div class="d-flex justify-content-between">
+                                 <!-- <a class="room-btn1 btn-sm btn-primary1 rounded py-2 px-4" href="">View Detail</a> -->
+                                 <a class="room-btn1" href="room-3-info.html">Select</a>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+  
+
+      <!-- About Start -->
+      <div class="container-xxl py-5" id="about">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h6 class="section-title">About Us</h6>
+                    <h1 class="mb-4">Welcome to <span class="lux">Hotel</span></h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="row g-3 pb-4">
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="border rounded p-1">
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-hotel iconza"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Rooms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="border rounded p-1">
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-users-cog iconza"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Staffs</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="border rounded p-1">
+                                <div class="border rounded text-center p-4">
+                                    <i class="fa fa-users iconza"></i>
+                                    <h2 class="mb-1" data-toggle="counter-up">1234</h2>
+                                    <p class="mb-0">Clients</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="room-btn1" href="">Explore More</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="image/room1.jpg" style="margin-top: 25%;">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="image/task2-two.jpg">
+                        </div>
+                        <div class="col-6 text-end">
+                            <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="image/task2-three.jpg">
+                        </div>
+                        <div class="col-6 text-start">
+                            <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="image/task2-one.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+     <!-- Contact Start -->
+     <div class="container-xxl py-5" id="contact">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title">Contact Us</h6>
+                <h1 class="mb-5"><span class="lux">Contact</span> For Any Query</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <h6 class="section-title">Booking</h6>
+                            <p><i class="fa fa-envelope-open text-primary1 me-2"></i>Hotelbook@example.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="section-title">General</h6>
+                            <p><i class="fa fa-envelope-open text-primary1 me-2"></i>Hotel@example.com</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="section-title">Technical</h6>
+                            <p><i class="fa fa-envelope-open text-primary1 me-2"></i>Hoteltech@example.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1696119.4846563253!2d34.726068910761406!3d33.870761781246145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17028422aaad%3A0xcc7d34096c00f970!2sLebanon!5e0!3m2!1sen!2slb!4v1679518684248!5m2!1sen!2slb" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <div class="wow fadeInUp" data-wow-delay="0.2s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="room-btn1 " type="submit">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+
+    <footer>
+        <p>&copy; 2023 Rayan Bouezzeddine. All rights reserved.</p>
+      </footer>
+      
+      
+      <!-- for the search button -->
+      <script>
+        const searchButton = document.querySelector('.sub');
+        const arrivalDateInput = document.querySelector('#arival');
+        const departureDateInput = document.querySelector('#dpart');
+      
+        searchButton.disabled = true; // disable button by default
+      
+        arrivalDateInput.addEventListener('change', () => {
+          if (arrivalDateInput.value === '' || departureDateInput.value === '') {
+            searchButton.disabled = true;
+            return;
+          }
+      
+          
+        });
+      
+        departureDateInput.addEventListener('change', () => {
+          if (arrivalDateInput.value === '' || departureDateInput.value === '') {
+            searchButton.disabled = true;
+            return;
+          }
+      
+          const arrivalDate = new Date(arrivalDateInput.value);
+          const departureDate = new Date(departureDateInput.value);
+      
+          if (departureDate < arrivalDate) {
+            alert('At least one night stay.');
+            departureDateInput.value = '';
+            searchButton.disabled = true;
+            return;
+          }
+      
+          searchButton.disabled = false;
+        });
+      
+        searchButton.addEventListener('click', () => {
+          const arrivalDate = new Date(arrivalDateInput.value);
+          const departureDate = new Date(departureDateInput.value);
+      
+          if (arrivalDate < new Date() || departureDate < new Date()) {
+            alert("We apologize, but we don't have any available rooms for the selected dates. Please choose a different date to continue with your booking. Thank you for considering our hotel.");
+            return;
+          }
+      
+          if (departureDate <= arrivalDate) {
+            alert('At least one night stay.');
+            return;
+          }
+      
+          searchButton.disabled = true; // disable the button during the delay
+      
+          setTimeout(() => {
+            window.location.href = 'room.html';
+          }, 1000); // delay for 1 second (1000 milliseconds)
+        });
+      </script>
+      
+      
+      
+      
+
+
+    <script>
+      const backToTopButton = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 100) {
+    backToTopButton.classList.add('show');
+  } else {
+    backToTopButton.classList.remove('show');
+  }
+});
+
+backToTopButton.addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+
+
+    </script>
+
+
+     <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navLinks = document.querySelector('#nav-links');
+      
+        menuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('show');
+        });
+      </script>
+      
+</body>
+</html>

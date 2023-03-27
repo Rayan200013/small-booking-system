@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 2: Room Functionality</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta content="REST Countries" property="og:title" />
+    <meta
+      content="Get information about countries via a RESTful API"
+      name="description"
+    />
+    <meta name="keywords" content="rest,api,countries,world,json" />
+    <meta name="author" content="Fayder Florez" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+      .room-container {
+        margin-top: 20px;
+      }
+      .room {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .room select {
+        width: 100px;
+        margin-right: 10px;
+      }
+      .add-room-btn {
+        margin-left: 110px;
+      }
+      .remove-room-btn {
+        margin-left: 10px;
+      }
+ 
+
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+          <div class="logo">
+              <img src="image/HOTEL__3_-removebg-preview.png" alt="">
+          </div>
+          <a class="menu-btn" href="#">
+              <span class="menu-icon">&#9776;</span>
+          
+          </a>
+          <ul id="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="room.html">Room</a></li>
+              <li class="book" style="float: right; background-color: #ffffff; margin-right: 10px; padding: auto; border-radius: 5px;"><a href="book.html">BOOK NOW!</a></li>
+          </ul>
+      </nav>
+  </div>
+
+
+    <div class="container-xxl py-5">
+      <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+              <h6 class="section-title">Room Booking</h6>
+              <h1 class="mb-5">Book <span class="lux">Your Room</span></h1>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                  <div class="col-6 text-end">
+                      <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="image/room1.jpg" style="margin-top: 25%;">
+                  </div>
+                  <div class="col-6 text-start">
+                      <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="image/task2-two.jpg">
+                  </div>
+                  <div class="col-6 text-end">
+                      <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="image/task2-three.jpg">
+                  </div>
+                  <div class="col-6 text-start">
+                      <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="image/task2-one.jpg">
+                  </div>
+                  <div class="col-6 text-end">
+                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="image/room1.jpg" style="margin-top: 25%;">
+                </div>
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="image/task2-two.jpg">
+                </div>
+                <div class="col-6 text-end">
+                    <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="image/task2-three.jpg">
+                </div>
+                <div class="col-6 text-start">
+                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="image/task2-one.jpg">
+                </div>
+                <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="image/room1.jpg" style="margin-top: 25%;">
+              </div>
+              <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="image/task2-two.jpg">
+              </div>
+              <div class="col-6 text-end">
+                  <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="image/task2-three.jpg">
+              </div>
+              <div class="col-6 text-start">
+                  <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="image/task2-one.jpg">
+              </div>
+              </div>
+          </div>
+              <div class="col-lg-6">
+                  <div class="wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                    <form action="book.php" method="POST" id="booking-form">
+                      <div class="row g-3">
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <select name="room" id="room" class="form-select">
+                                <option value="1">Room 1</option>
+                              </select>
+                              <label for="room">Room Selected:</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <select name="adults-select" id="adults-select" class="form-select" >
+                              <option value="1">1</option>
+                              </select>
+                            <label for="select1">Select Adult</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <select name="children-select" id="children-select" class="form-select" >
+                              <option value="0">0</option>
+                              </select>
+                            <label for="select2">Select Child</label>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <button id="add-adult-btn" type="button" class="bttn">Add Adult</button>
+                            <br>
+                            <br>
+                            <button id="remove-adult-btn" type="button" class="bttn">Remove Adult</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <button id="add-child-btn" type="button" class="bttn">Add Child</button>
+                            <br>
+                            <br>
+                            <button id="remove-child-btn" type="button" class="bttn"> Remove Child</button>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="form-floating">
+                             <div class="col-2">
+                                  <label for="ariv" class="lab">ARRIVAL:</label>
+                                  <input type="date" name="arrival" id="ariv">
+                              </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <div class="col-2">
+                              <label for="dpart" class="lab">DEPARTURE:</label>
+                              <input type="date" name="departure" id="dpart">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-floating">
+                            <input type="text" name="price" id="price-night" step="0.01" readonly required>
+                          </div>
+                        </div>
+                        </div>
+                        <br>
+                        <p><span id="adults-count"></span></p>
+                        <p><span id="children-count"></span></p>
+                        <p>Total Price: $<span id="total-price"></span></p>
+
+                        <div class="row g-3">
+                          <h1 class="headin">PAYMENT DETAILS</h1>
+                          <div class="col-12">
+                            <div class="form-floating">    
+                           
+                          <label for="card-number">Card Number:</label>
+                          <br>
+                          <br>
+                          <input type="text" id="card-number" name="card_number" class="in" required>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-floating">    
+                           
+                          <label for="expiry-date">Expiry Date:</label>
+                          <br>
+                          <br>
+                          <input type="date" id="expiry-date" name="expirydate" class="in" required>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-floating">    
+                           
+                          <label for="csv-number">CSV Number:</label>
+                          <br>
+                          <br>
+                          <input type="text" id="csv-number" name="csv_number" class="in" required>
+                            </div>
+                          </div>
+
+                        </div>
+                        <br>
+
+
+                        <div class="row g-3">
+                          <h1 class="headin">ENTER YOUR DETAILS</h1>
+                          <!-- <form action="book.php" method="POST" class="form-book-2" id="guest-details-form"> -->
+
+                            
+                            <div class="col-12">
+                              <div class="form-floating">    
+                             
+                              <input type="text" name="first_name" id="first-name" placeholder="Your first name..." class="in" required>
+                              
+                              </div>
+                            </div>  
+                            <div class="col-12">
+                              <div class="form-floating">
+                              <input type="text" name="last_name" id="last-name" placeholder="Your last name..." class="in" required>
+                              
+                            </div>
+                            </div>
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                    
+                                    <select id="country" name="country">
+                                      <option value="">Select a country...</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                       
+                                        <input type="text" id="city" name="city" list="city-list" placeholder="city">
+                                        <datalist id="city-list"></datalist>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                    <input type="email" name="email" id="email" placeholder="Your email.." required>
+                                  </div>
+                                  </div>
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                    <label for="">Date Of Birth</label>
+                                    <br>
+                                    <br>
+                                    <input type="date" name="dob" id="dob" required>
+                                  </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                  <div class="form-floating">
+                                        <label for="passport">Passport No:</label>
+                                        <br>
+                                        <br>
+                                        <input type="text" id="passport-details" name="passport">
+                                  </div>
+                                </div>
+                                <div class="col-md-6">
+                                  <div class="form-floating">
+                                    <div class="col-12">
+                                      <button id="submit-btn" type="submit" class="room-btn1">Confirm</button>
+                                    </div>
+                                  </div>
+                                </div>
+                             
+                              </div>
+                           
+                      </div>
+                    </form>   
+                               
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023 Rayan Bouezzeddine. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var arrivalDateInput = document.getElementById('ariv');
+    var departureDateInput = document.getElementById('dpart');
+    var totalPriceElement = document.getElementById('total-price');
+    var discountElement = document.getElementById('discount');
+    
+    // Add event listeners to the date inputs
+    arrivalDateInput.addEventListener('change', calculateTotalPrice);
+    departureDateInput.addEventListener('change', calculateTotalPrice);
+  
+    function calculateTotalPrice() {
+  // Get the arrival and departure dates from the form
+  var arrivalDate = new Date(document.getElementById('ariv').value);
+  var departureDate = new Date(document.getElementById('dpart').value);
+
+  // Validate that the departure date is not before the arrival date
+  if (departureDate < arrivalDate) {
+    alert("Please select a departure date that is after the arrival date.");
+    return;
+  }
+
+  // Calculate the number of nights
+  var oneDay = 24 * 60 * 60 * 1000; // Number of milliseconds in a day
+  var diffDays = Math.round(Math.abs((departureDate.getTime() - arrivalDate.getTime()) / oneDay));
+  
+  // Calculate the total price
+  var pricePerNight = 300;
+  var totalPrice = pricePerNight * diffDays;
+
+  // Calculate the discount
+  var discount = calculateDiscount(diffDays, arrivalDate);
+
+  // Update the total price and discount on the form
+  document.getElementById('price-night').value = 'Total Price: $' + totalPrice;
+  document.getElementById('total-price').textContent = totalPrice - discount;
+  document.getElementById('discount-amount').textContent = discount;
+  
+  // Update the total price on the page for the user to see
+  document.getElementById('total-price-span').textContent = totalPrice - discount;
+}
+
+function calculateDiscount(numOfDays, arrivalDate) {
+  // Calculate the discount if the user is staying more than 4 days
+  if (numOfDays > 4) {
+    var pricePerNight = 300;
+    var totalPrice = pricePerNight * numOfDays;
+    var discount = totalPrice * 0.1; // 10% discount
+    return discount;
+  } else {
+    return 0;
+  }
+}
+
+  </script>
+  
+  
+
+  <script>
+    // Get the necessary elements from the HTML document
+    const room1Form = document.getElementById("room1-form");
+    const adultsSelect = document.getElementById("adults-select");
+    const childrenSelect = document.getElementById("children-select");
+    const addAdultBtn = document.getElementById("add-adult-btn");
+    const removeAdultBtn = document.getElementById("remove-adult-btn");
+    const addChildBtn = document.getElementById("add-child-btn");
+    const removeChildBtn = document.getElementById("remove-child-btn");
+    const adultsCountSpan = document.getElementById("adults-count");
+    const childrenCountSpan = document.getElementById("children-count");
+  
+    // Set the maximum number of adults and children that can be selected
+    const MAX_ADULTS = 6;
+    const MAX_CHILDREN = 3;
+    const MIN_ADULTS = 1;
+    const MIN_CHILDREN = 0;
+  
+    // Initialize the adult and children counts to the initial values of the selects
+    let adultsCount = parseInt(adultsSelect.value);
+    let childrenCount = parseInt(childrenSelect.value);
+  
+    // Function to update the counts and display them in the spans
+    function updateCounts() {
+      adultsCount = parseInt(adultsSelect.value);
+      childrenCount = parseInt(childrenSelect.value);
+      adultsCountSpan.textContent = "Adults: " + adultsCount;
+      childrenCountSpan.textContent = "Children: " + childrenCount;
+    }
+  
+    // Add event listeners to the buttons to update the counts and selects when clicked
+    addAdultBtn.addEventListener("click", function() {
+      if (adultsCount < MAX_ADULTS) {
+        adultsCount++;
+        adultsSelect.innerHTML += '<option value="' + adultsCount + '">' + adultsCount + '</option>';
+        adultsSelect.value = adultsCount;
+        updateCounts();
+      }
+    });
+  
+    removeAdultBtn.addEventListener("click", function() {
+      if (adultsCount > MIN_ADULTS) {
+        adultsCount--;
+        adultsSelect.removeChild(adultsSelect.lastChild);
+        adultsSelect.value = adultsCount;
+        updateCounts();
+      }
+    });
+  
+    addChildBtn.addEventListener("click", function() {
+      if (childrenCount < MAX_CHILDREN) {
+        childrenCount++;
+        childrenSelect.innerHTML += '<option value="' + childrenCount + '">' + childrenCount + '</option>';
+        childrenSelect.value = childrenCount;
+        updateCounts();
+      }
+    });
+  
+    removeChildBtn.addEventListener("click", function() {
+      if (childrenCount > MIN_CHILDREN) {
+        childrenCount--;
+        childrenSelect.removeChild(childrenSelect.lastChild);
+        childrenSelect.value = childrenCount;
+        updateCounts();
+      }
+    });
+  
+    // Confirm button event listener
+    confirmBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      let message = 'You have booked room 1 with ' + adultsCount + ' adult(s) and ' + childrenCount + ' child(ren).';
+      confirm(message);
+    });
+  </script>
+  
+
+  <script>
+    const json = localStorage.getItem('form');
+    const obj = JSON.parse(json);
+
+    for (key in obj) {
+        const markup = `
+        <div>
+            <span>${key}: ${obj[key]} </span>
+        </div>   
+        `;
+        document.getElementById('data').innerHTML += markup;
+    }
+</script>
+<script>
+    const select = document.getElementById('country');
+    
+    fetch('https://restcountries.com/v3.1/all')
+      .then(response => response.json())
+      .then(data => {
+        const countries = data.map(country => country.name.common);
+        countries.sort();
+        
+        countries.forEach(name => {
+          const option = document.createElement('option');
+          option.value = name;
+          option.text = name;
+          select.appendChild(option);
+        });
+      });
+  </script>
+<script>
+const input = document.getElementById('city');
+const dataList = document.getElementById('city-list');
+
+fetch('https://raw.githubusercontent.com/lutangar/cities.json/master/cities.json')
+  .then(response => response.json())
+  .then(data => {
+    const cities = data.map(city => city.name);
+    cities.sort();
+
+    cities.forEach(name => {
+      const option = document.createElement('option');
+      option.value = name;
+      dataList.appendChild(option);
+    });
+  })
+  .catch(error => {
+    console.error('Error fetching city data:', error);
+  });
+</script>
+
+
+
+<!-- save button -->
+
+
+<script>
+function saveGuestDetails() {
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var city = document.getElementById("city").value;
+var country = document.getElementById("country").value;
+var email = document.getElementById("email").value;
+var dob = document.getElementById("dob").value;
+var passport = document.getElementById("passport").value;
+var arrivalDate = new Date(document.getElementById("ariv").value);
+var departureDate = new Date(document.getElementById("dpart").value);
+var oneDay = 24 * 60 * 60 * 1000; // milliseconds in one day
+var nightsStay = Math.round(Math.abs((departureDate - arrivalDate) / oneDay));
+
+if (departureDate <= arrivalDate) {
+alert('Departure date must be after arrival date.');
+return false;
+}
+
+if (nightsStay < 1) {
+alert('You must stay for at least one night.');
+return false;
+}
+
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function() {
+if (xhr.readyState === 4) {
+  if (xhr.status === 200) {
+    alert('Guest details saved successfully!');
+  } else {
+    alert('Failed to save guest details. Please try again later.');
+  }
+}
+};
+xhr.open('POST', 'save-guest-details.php');
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+xhr.send('firstName=' + encodeURIComponent(firstName) + '&lastName=' + encodeURIComponent(lastName) + '&city=' + encodeURIComponent(city) + '&country=' + encodeURIComponent(country) + '&email=' + encodeURIComponent(email) + '&dob=' + encodeURIComponent(dob) + '&passport=' + encodeURIComponent(passport));
+}
+
+</script>
+
+  
+
+
+  </body>
+</html>
+
+
