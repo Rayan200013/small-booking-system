@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SignUP</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +17,7 @@
   body {
 margin: 0;
 padding: 0;
+background-image: url('image/home-background.jpg');
 /* font-family: Arial, sans-serif; */
 }
 
@@ -26,7 +27,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background-image: url('path/to/background-image.jpg');
+background-image: url('image/home-background.jpg');
 background-size: cover;
 background-position: center;
 filter: brightness(0.7);
@@ -80,11 +81,14 @@ cursor: pointer;
 }
 
 button:hover {
-background-color: #000;
+background-color: #333;
 }
-a{
+.aaa{
     color: #9bc3ff;
     text-decoration: none;
+}
+.aaa:hover{
+  text-decoration: underline;
 }
 
 </style>
@@ -133,7 +137,7 @@ a{
         <button type="submit">Sign Up</button>
       </form>
       <br>
-      <p>Already have an account? <a href="#">Sign In</a></p>
+      <p>Already have an account? <a href="sign.html" class="aaa">Sign In</a></p>
     </div>
   </div>
   
